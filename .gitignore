@@ -216,3 +216,56 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# System
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Specific directories for various tools/frameworks
+# Tox
+.tox/
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+# Sphinx documentation
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Ruff cache
+.ruff_cache
+
+# Tcl
+# Tcl/Tk specific
+*.o
+*.so
+*.dll
+*.a
+*.dylib
+*.bak
+*.tmp
+tags
+
+# Build artifacts
+Makefile
+config.log
+config.status
+config.cache
+autom4te.cache/
+
+# Editor/OS specific
+.DS_Store
+*~
+*.swp
+.vscode/
+.idea/
+
+# IxNetwork Linux API Server binary
+IxNetworkAPI*
+api.key
+artifacts/
+cases/
+*.log
+*.csv

@@ -1,0 +1,103 @@
+#
+# Run:
+#   docker compose run --rm ixnetwork
+
+#version: "3"
+services:
+  ixnetwork:
+    platform: linux/amd64
+    privileged: true
+    build:
+      context: .
+    image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+    volumes:
+      - ~/.ssh:/home/ubuntu/.ssh:ro
+      - .:/IxNetwork
+      - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+    env_file:
+      - ./ixnetwork.env
+    working_dir: /IxNetwork
+
+  ixnetwork26.5:
+    platform: linux/amd64
+    privileged: true
+    build:
+      context: .
+    image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+    volumes:
+      - ~/.ssh:/home/ubuntu/.ssh:ro
+      - .:/IxNetwork
+      - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+    env_file:
+      - ./ixenv/ixnetwork26.5.env
+    working_dir: /IxNetwork
+  
+  ixnetwork26.0:
+    platform: linux/amd64
+    privileged: true
+    build:
+      context: .
+    image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+    volumes:
+      - ~/.ssh:/home/ubuntu/.ssh:ro
+      - .:/IxNetwork
+      - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+    env_file:
+      - ./ixenv/ixnetwork26.0.env
+    working_dir: /IxNetwork
+
+##   ixnetwork11.10:
+##     platform: linux/amd64
+##     privileged: true
+##     build:
+##       context: .
+##     image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+##     volumes:
+##       - ~/.ssh:/home/ubuntu/.ssh:ro
+##       - .:/IxNetwork
+##       - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+##     env_file:
+##       - ./ixenv/ixnetwork11.10.env
+##     working_dir: /IxNetwork
+## 
+##   ixnetwork11.00U1:
+##     platform: linux/amd64
+##     privileged: true
+##     build:
+##       context: .
+##     image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+##     volumes:
+##       - ~/.ssh:/home/ubuntu/.ssh:ro
+##       - .:/IxNetwork
+##       - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+##     env_file:
+##       - ./ixenv/ixnetwork11.00U1.env
+##     working_dir: /IxNetwork
+## 
+##   ixnetwork11.00:
+##     platform: linux/amd64
+##     privileged: true
+##     build:
+##       context: .
+##     image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+##     volumes:
+##       - ~/.ssh:/home/ubuntu/.ssh:ro
+##       - .:/IxNetwork
+##       - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+##     env_file:
+##       - ./ixenv/ixnetwork11.00.env
+##     working_dir: /IxNetwork
+## 
+##   ixnetwork10.00:
+##     platform: linux/amd64
+##     privileged: true
+##     build:
+##       context: .
+##     image: ghcr.io/daddy-knows-ixnetwork/ixnetwork:main
+##     volumes:
+##       - ~/.ssh:/home/ubuntu/.ssh:ro
+##       - .:/IxNetwork
+##       - ~/.gitconfig:/home/ubuntu/.gitconfig:ro
+##     env_file:
+##       - ./ixenv/ixnetwork10.00.env
+##     working_dir: /IxNetwork
