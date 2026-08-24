@@ -120,12 +120,12 @@ RUN set -ex && \
     uv venv /opt/ixia/venv/venv26.5 &&\
     . /opt/ixia/venv/venv26.5/bin/activate &&\
     uv pip install -r /opt/ixia/ixnetwork/26.5.2644.8/lib/PythonApi/requirements.txt &&\
-    uv pip install --upgrade ixnetwork-restpy pyyaml jupyterlab &&\
+    uv pip install --upgrade ixnetwork-restpy pyyaml jupyterlab snappi snappi-ixnetwork &&\
     deactivate &&\
     uv venv /opt/ixia/venv/venv26.0 &&\
     . /opt/ixia/venv/venv26.0/bin/activate &&\
     uv pip install -r /opt/ixia/ixnetwork/26.0.2601.6/lib/PythonApi/requirements.txt &&\
-    uv pip install --upgrade ixnetwork-restpy pyyaml jupyterlab &&\
+    uv pip install --upgrade ixnetwork-restpy pyyaml jupyterlab snappi snappi-ixnetwork &&\
     deactivate 
 ##     deactivate &&\
 ##     uv venv /opt/ixia/venv/venv11.10 &&\
