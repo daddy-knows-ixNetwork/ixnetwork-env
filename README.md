@@ -1,5 +1,10 @@
 # ixnetwork-env
 ixnetwork script development environment for HLAPI and ixnetwork-restpy, snappi, snappi-ixnetwork
+* Ubuntu 24.04
+* pyenv, uv
+* IxNetwork HLAPI 26.0, 26.5
+* the latest ixnetwork-restpy
+* the latest snappi, snappi-ixnetwork
 
 # how to build and run
 
