@@ -1,5 +1,5 @@
 # ixnetwork-env
-ixnetwork script development environment for HLTAPI and IxNetwork RestPy
+ixnetwork script development environment for HLAPI and ixnetwork-restpy, snappi, snappi-ixnetwork
 
 # how to build and run
 
